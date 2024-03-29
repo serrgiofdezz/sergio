@@ -3,12 +3,10 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: -webkit-fill-available;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
   background-color: #FAFAFA;
   margin: 5px;
   padding: 0;
-  overflow-y: scroll;
 }
 
 main {
@@ -35,6 +33,22 @@ body, a {
   color: #202020;
 }
 
+a.src {
+  text-align: left;
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: italic;
+  color: #404040;
+}
+
+a.src:hover {
+  text-decoration: underline;
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1C1E21;
@@ -44,6 +58,12 @@ body, a {
     font-weight: bold;
     color: #6CACE4;
   }
+
+  a.src {
+    color: rgba(255,255,255,0.6);
+    font-weight: normal;
+  }
+
 
   body, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
     color: rgba(255,255,255,0.85);
