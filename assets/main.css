@@ -50,20 +50,21 @@ a.src:hover {
 
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
   body {
-    background-color: #1C1E21;
+    background-color: #121212;
   }
 
   a:link, a:active, a:visited {
-    font-weight: bold;
     color: #7886CD;
   }
 
   a.src {
     color: rgba(255,255,255,0.6);
-    font-weight: normal;
   }
-
 
   body, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
     color: rgba(255,255,255,0.85);
