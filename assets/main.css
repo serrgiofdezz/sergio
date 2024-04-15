@@ -1,10 +1,26 @@
 /* Copyright C 2023 The BBJProjeK Organization */
 
+:root {
+  --normal: #202020;
+  --heading: #404040;
+  --themed: #1D4F91;
+  --background: #FAFAFA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --normal: #FFFFFFD9;
+    --themed: #7886CD;
+    --background: #121212;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
-  background-color: #FAFAFA;
+  background-color: var(--background);
   margin: 5px;
   padding: 0;
 }
@@ -21,7 +37,7 @@ main {
 
 a:link, a:active, a:visited {
   font-weight: bold;
-  color: #1D4F91;
+  color: var(--themed);
 }
 
 h1 {
@@ -29,8 +45,8 @@ h1 {
   margin-bottom: 0.4em;
 }
 
-body, a {
-  color: #202020;
+a, p, h1, h2, h3, h4, li {
+  color: var(--normal)
 }
 
 a.src {
@@ -41,32 +57,9 @@ a.src {
   text-decoration: none;
   font-weight: normal;
   font-style: italic;
-  color: #404040;
+  color: var(--heading);
 }
 
 a.src:hover {
   text-decoration: underline;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-
-  body {
-    background-color: #121212;
-  }
-
-  a:link, a:active, a:visited {
-    color: #7886CD;
-  }
-
-  a.src {
-    color: rgba(255,255,255,0.6);
-  }
-
-  body, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
-    color: rgba(255,255,255,0.85);
-  }
 }
