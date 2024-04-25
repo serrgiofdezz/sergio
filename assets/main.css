@@ -51,11 +51,10 @@ a, p, h1, h2, h3, h4, li {
 
 a.src {
   text-align: left;
-  position: absolute;
+  position: fixed;
   bottom: 4px;
   right: 8px;
   text-decoration: none;
-  font-weight: normal;
   font-style: italic;
   color: var(--heading);
 }
