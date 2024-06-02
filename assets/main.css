@@ -47,17 +47,3 @@ h1 {
 a, p, h1, h2, h3, h4, li {
   color: var(--normal)
 }
-
-a.src {
-  text-align: left;
-  position: fixed;
-  bottom: 4px;
-  right: 8px;
-  text-decoration: none;
-  font-style: italic;
-  color: var(--heading);
-}
-
-a.src:hover {
-  text-decoration: underline;
-}
