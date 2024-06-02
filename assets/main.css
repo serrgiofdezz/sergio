@@ -37,6 +37,11 @@ main {
 
 a:link, a:active, a:visited {
   color: var(--branding);
+  text-decoration: none;
+}
+
+a:link:hover, a:active:hover, a:visited:hover {
+  text-decoration: underline;
 }
 
 h1 {
