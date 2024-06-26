@@ -37,7 +37,7 @@ main {
 
 a:link, a:active, a:visited {
   color: var(--branding);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:link:hover, a:active:hover, a:visited:hover {
