@@ -3,7 +3,7 @@
 :root {
   --normal: #202020;
   --heading: #404040;
-  --branding: #505988;
+  --branding: #395542;
   --background: #FAFAFA;
 }
 
@@ -11,7 +11,7 @@
   :root {
     color-scheme: dark;
     --normal: #FAFAFA;
-    --branding: #7886CD;
+    --branding: #A7B3AB;
     --background: #121212;
   }
 }
